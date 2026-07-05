@@ -1,16 +1,9 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from "./components/NavBar";
-import Hero from "./components/Hero";
-function App() {
-  // const [count, setCount] = useState(0)
+import { useState } from "react";
+import "./App.css";
+import AppRoutes from "./routes/AppRoutes";
 
-  return (
-    <>
-        <Navbar />
-        <Hero />
-    </>
-  )
+function App() {
+  return <AppRoutes />;
 }
 
-export default App
+export default App;
