@@ -4,15 +4,20 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import NavLinks from "./component/NavLinks";
 import { Button, IconButton, Typography } from "@mui/material";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 function Navbar() {
+  const location = useLocation();
+  const pathName = location.pathname;
+
   return (
     <>
       <nav className="w-full h-20 bg-white border-b border-gray-200 flex items-center justify-between px-10">
         <div className="flex gap-8">
           <div className="text-3xl font-bold text-blue-500 cursor-pointer">
-            BookBridge
+           <Link to="/"> BookBridge </Link>
           </div>
-          <NavLinks />
+
+          <NavLinks currentPath={pathName}/>
         </div>
 
         <div className="flex items-center gap-8">

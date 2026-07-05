@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import MainLayout from "../components/Layout/MainLayout";
 import LandingPage from "../pages/LandingPage";
+import BrowsePage from "../pages/BrowsePage";
 // import AuthLayout from "../layouts/AuthLayout";
 
 const AppRoutes = () => {
@@ -11,6 +12,7 @@ const AppRoutes = () => {
       {/* Main Website */}
       <Route element={<MainLayout />}>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/browse" element={<BrowsePage />} />
       </Route>
 
       {/* Authentication */}
