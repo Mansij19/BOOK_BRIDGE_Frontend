@@ -1,7 +1,8 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import Analytics from "./components/Analytics";
-import CustomButton from "../UI/Button";
+import CustomButton from "../UI/NavBar/Button";
+// import ImageSection from "./components/ImageSection";
 function Hero() {
   const analyticsData = [
     { count: "1M+", title: "Active Students" },
@@ -9,6 +10,7 @@ function Hero() {
     { count: "100K+", title: "Uploaded Books" },
   ];
   return (
+    <>
     <section className="bg-gray-100 flex flex-col items-center justify-center pt-10">
       <div className="inline-flex items-center justify-center rounded-full bg-blue-100 px-6 py-3">
         <span className="text-lg font-medium text-blue-500">
@@ -32,13 +34,12 @@ function Hero() {
         <input
           type="text"
           placeholder="Search for books, notes etc..."
-          className="w-full h-full pl-14 pr-40 text-lg rounded-xl focus:outline-none"
-        />
+          className="w-full h-full pl-14 pr-40 text-lg rounded-xl focus:outline-none" />
 
         <div className="absolute right-2 top-1/2 -translate-y-1/2 h-12  flex items-center justify-center">
           <CustomButton>
-          search
-        </CustomButton>
+            search
+          </CustomButton>
         </div>
       </div>
 
@@ -53,7 +54,11 @@ function Hero() {
           </div>
         ))}
       </div>
+
     </section>
+    
+    </>
+
   );
 }
 

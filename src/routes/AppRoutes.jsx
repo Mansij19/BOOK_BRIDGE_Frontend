@@ -3,6 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "../components/Layout/MainLayout";
 import LandingPage from "../pages/LandingPage";
 import BrowsePage from "../pages/BrowsePage";
+import CommunityPage from "../pages/CommunityPage";
+import AboutPage from "../pages/AboutPage";
+import ProfilePage from "../pages/ProfilePage";
+import UploadPage from "../pages/UploadPage";
+import NotificationsPage from "../pages/NotificationPage";
+import CartPage from "../pages/CartPage";
 // import AuthLayout from "../layouts/AuthLayout";
 
 const AppRoutes = () => {
@@ -13,7 +19,14 @@ const AppRoutes = () => {
       <Route element={<MainLayout />}>
         <Route path="/" element={<LandingPage />} />
         <Route path="/browse" element={<BrowsePage />} />
+        <Route path="/Community" element={<CommunityPage />} />
+        <Route path="/About" element={<AboutPage />} />
+        
       </Route>
+      <Route path="/profile" element= {<ProfilePage />} />
+      <Route path="/uploads" element= {<UploadPage />} />
+      <Route path="/notifications" element= {<NotificationsPage />} />
+      <Route path="/cart" element= {<CartPage />} />
 
       {/* Authentication */}
       {/* <Route element={<AuthLayout />}>
