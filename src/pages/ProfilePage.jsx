@@ -1,10 +1,10 @@
 import React from 'react'
-import SideBar from "../components/UI/NavBar/ProfilePageSideBar";
+import SideBar from "../components/UI/DashboardSideBar";
 
 const ProfilePAge = () => {
   return (
     <div>
-      <SideBar /> 
+      this is profile page
     </div>
   )
 }

@@ -2,9 +2,9 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
-import NavLinks from "./component/NavLinks";
 import { Button, IconButton, Typography } from "@mui/material";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import NavLinks from "./component/NavLinks";
 function Navbar() {
   const location = useLocation();
   const pathName = location.pathname;

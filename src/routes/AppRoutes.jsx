@@ -9,6 +9,7 @@ import ProfilePage from "../pages/ProfilePage";
 import UploadPage from "../pages/UploadPage";
 import NotificationsPage from "../pages/NotificationPage";
 import CartPage from "../pages/CartPage";
+import DashboardLayout from "../components/Layout/DashboardLayout";
 // import AuthLayout from "../layouts/AuthLayout";
 
 const AppRoutes = () => {
@@ -21,12 +22,15 @@ const AppRoutes = () => {
         <Route path="/browse" element={<BrowsePage />} />
         <Route path="/Community" element={<CommunityPage />} />
         <Route path="/About" element={<AboutPage />} />
-        
       </Route>
-      <Route path="/profile" element= {<ProfilePage />} />
-      <Route path="/uploads" element= {<UploadPage />} />
-      <Route path="/notifications" element= {<NotificationsPage />} />
-      <Route path="/cart" element= {<CartPage />} />
+
+      {/* User Pages */}
+      <Route element={<DashboardLayout />}>
+        <Route path="/profile" element= {<ProfilePage />} />
+        <Route path="/uploads" element= {<UploadPage />} />
+        <Route path="/notifications" element= {<NotificationsPage />} />
+        <Route path="/cart" element= {<CartPage />} />
+      </Route>
 
       {/* Authentication */}
       {/* <Route element={<AuthLayout />}>
