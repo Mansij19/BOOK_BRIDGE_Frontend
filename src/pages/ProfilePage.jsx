@@ -4,8 +4,7 @@ import SideBar from "../components/UI/NavBar/ProfilePageSideBar";
 const ProfilePAge = () => {
   return (
     <div>
-      <SideBar />
-      
+      <SideBar /> 
     </div>
   )
 }

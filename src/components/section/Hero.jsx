@@ -2,6 +2,7 @@ import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import Analytics from "./components/Analytics";
 import CustomButton from "../UI/NavBar/Button";
+import ImageSection from "./components/ImageSection";
 // import ImageSection from "./components/ImageSection";
 function Hero() {
   const analyticsData = [
@@ -55,8 +56,11 @@ function Hero() {
         ))}
       </div>
 
+      
+
     </section>
     
+    <ImageSection />
     </>
 
   );

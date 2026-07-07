@@ -6,7 +6,6 @@ const NotificationPage = () => {
     <>
       <SideBar />
       <div className="ml-40 flex-1 p-8 flex-row">
-
         <h1 className="ml-40 flex-1 p-8 flex-rowtext-3xl font-bold">Notifications</h1>
       </div>
     </>
