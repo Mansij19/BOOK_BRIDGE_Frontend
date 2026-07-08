@@ -3,10 +3,7 @@ import library from "../../assets/library.jpg";
 import pyq from "../../assets/pyq image.jpg";
 import tabimage from "../../assets/tabimage.jpg";
 import bookimage from "../../assets/book image open.jpg";
-import pysicsbook from "../../assets/pysicsbook.jpg";
-import eco from "../../assets/eco book.jpg";
-import mathsformula from "../../assets/mathsformula.jpg";
-import dsabook from "../../assets/dsabook.jpg";
+
 import SectionHeader from "../UI/SectionHeader";
 
 const ImageSection = () => {

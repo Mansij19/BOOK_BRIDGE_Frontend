@@ -3,6 +3,8 @@ import Hero from "../components/section/Hero";
 import ImageSection from "../components/section/ImageSection";
 import HowItWorks from "../components/section/HowItWorks";
 import FeaturedResources from "../components/section/components/FeaturedResources";
+import GetStarted from "../components/section/GetStarted";
+import Footer from "../components/UI/Footer";
 
 const LandingPage = () => {
   return (
@@ -12,6 +14,8 @@ const LandingPage = () => {
         <ImageSection />
         <FeaturedResources />
         <HowItWorks/>
+        <GetStarted/>
+        <Footer/>
       </div>
     </>
   );
