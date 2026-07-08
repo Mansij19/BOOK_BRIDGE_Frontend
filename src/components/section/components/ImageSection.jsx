@@ -3,6 +3,16 @@ import library from "../../../assets/library.jpg";
 import pyq from "../../../assets/pyq image.jpg";
 import tabimage from "../../../assets/tabimage.jpg";
 import bookimage from "../../../assets/book image open.jpg";
+import pysicsbook from "../../../assets/pysicsbook.jpg"
+import eco from "../../../assets/eco book.jpg"
+import mathsformula from "../../../assets/mathsformula.jpg"
+import dsabook from "../../../assets/dsabook.jpg"
+
+import SearchIcon from '@mui/icons-material/Search';
+import SendIcon from '@mui/icons-material/Send';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
 const ImageSection = () => {
   return (
     <>
@@ -70,7 +80,49 @@ const ImageSection = () => {
             PDFs & Research
           </h3>
         </div>
+     
+
       </div>
+      
+       <div className="ml-5 mt-20 flex flex-col items-center">
+        <p className="text-3xl">Featured Resources</p>
+        <p className="text-lg mt-4">Handpicked top rated resources trending across campuses this week</p>
+      </div>
+      {/* <div className="mx-5 mt-8 w-30 h-50 gap-4 grid grid-cols-[1.4fr_1fr_1fr] grid-rows-2 gap-4 h-[650px]">
+        <img src={pysicsbook} alt="Physics Book" className="w-full h-full object-cover rounded" />
+        <img src={eco} alt="Economics Book" className="w-full h-full object-cover rounded" />
+      </div> */}
+       <div className="ml-5 mt-40 flex flex-col items-center">
+        <p className="text-3xl">How It Works</p>
+        <p className="text-lg mt-4">Three simple steps to join and start learning</p>
+      </div>
+       <div className="ml-30 mt-30 flex flex-row  justify-center items-center gap-10">
+        <div className="flex flex-col items-center ">
+        <icon className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-300 text-blue-800 size-9">
+          <SearchIcon size="large" fontSize="large" />
+        </icon>
+        <p className="text-2xl mt-4 font-medium">Find</p>
+        <p className="text-center justify-center">Use our smart filters to find specific books , notes, pyqs for your exact course and need. </p>
+        </div>
+        <div className="flex flex-col items-center">
+          <icon className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-300 text-blue-800 size-9">
+            <SendIcon size="large" fontSize="large" />
+          </icon>
+          <p className="text-2xl mt-4 font-medium">Request</p>
+          <p className="text-center justify-center">Explore our curated collection of study materials across various subjects and difficulty levels. </p>
+        </div>
+        <div className="flex flex-col items-center">
+          <icon className="flex items-center justify-center w-16 h-16 rounded-full bg-blue-300 text-blue-800 size-9">
+            <ArrowForwardIcon size="large" fontSize="large" />
+          </icon>
+          <p className="text-2xl mt-4 font-medium">Exchange</p>
+          <p className="text-center justify-center">Explore our curated collection of study materials across various subjects and difficulty levels. </p>
+        </div>
+      </div>
+      
+
+      
+      
     </>
   );
 };
