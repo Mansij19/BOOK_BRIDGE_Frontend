@@ -10,6 +10,7 @@ import UploadPage from "../pages/UploadPage";
 import NotificationsPage from "../pages/NotificationPage";
 import CartPage from "../pages/CartPage";
 import DashboardLayout from "../components/Layout/DashboardLayout";
+import Login from "../pages/LoginPage";
 // import AuthLayout from "../layouts/AuthLayout";
 
 const AppRoutes = () => {
@@ -31,7 +32,8 @@ const AppRoutes = () => {
         <Route path="/notifications" element= {<NotificationsPage />} />
         <Route path="/cart" element= {<CartPage />} />
       </Route>
-
+      
+       <Route path="/login" element={<Login />} />
       {/* Authentication */}
       {/* <Route element={<AuthLayout />}>
         <Route path="/login" element={<Login />} />
