@@ -15,7 +15,6 @@ const LandingPage = () => {
         <FeaturedResources />
         <HowItWorks/>
         <GetStarted/>
-        <Footer/>
       </div>
     </>
   );

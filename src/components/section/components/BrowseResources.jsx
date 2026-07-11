@@ -1,67 +1,13 @@
-import React from 'react'
-import ResourceCard from '../../UI/ResourceCard';
-import physicsbook from "../../../assets/pysicsbook.jpg";
+import React from "react";
+import ResourceCard from "../../UI/ResourceCard";
+import { resources } from "../../../constants/BrowserData";
 const BrowseResources = () => {
-     const resources = [
-        {
-          image: physicsbook,
-          subject: "Physics",
-          name: "Fundamentals of Physics",
-          author: "H.C. Verma • IIT Delhi",
-          rating: 4.9,
-          requestLink: "/request/fundamentals-of-physics",
-          
-        },
-     {
-          image: physicsbook,
-          subject: "Physics",
-          name: "Fundamentals of Physics",
-          author: "H.C. Verma • IIT Delhi",
-          rating: 4.9,
-          requestLink: "/request/fundamentals-of-physics",
-          
-        },
-     {
-          image: physicsbook,
-          subject: "Physics",
-          name: "Fundamentals of Physics",
-          author: "H.C. Verma • IIT Delhi",
-          rating: 4.9,
-          requestLink: "/request/fundamentals-of-physics",
-          
-        },
-     {
-          image: physicsbook,
-          subject: "Physics",
-          name: "Fundamentals of Physics",
-          author: "H.C. Verma • IIT Delhi",
-          rating: 4.9,
-          requestLink: "/request/fundamentals-of-physics",
-          
-        },
-     {
-          image: physicsbook,
-          subject: "Physics",
-          name: "Fundamentals of Physics",
-          author: "H.C. Verma • IIT Delhi",
-          rating: 4.9,
-          requestLink: "/request/fundamentals-of-physics",
-          
-        },
-     {
-          image: physicsbook,
-          subject: "Physics",
-          name: "Fundamentals of Physics",
-          author: "H.C. Verma • IIT Delhi",
-          rating: 4.9,
-          requestLink: "/request/fundamentals-of-physics",
-          
-        }]
   return (
-    <div className="grid grid-cols-2 grid-rows-3 gap-4 justify-around">
-        <div className="w-full flex items-center justify-around max-w-4/5">
+    <div className="flex w-full">
+      <div className="flex flex-wrap gap-4 w-full items-center">
         {resources.map((resource, index) => (
           <ResourceCard
+            width={"w-80"}
             key={index}
             image={resource.image}
             subject={resource.subject}
@@ -73,7 +19,7 @@ const BrowseResources = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BrowseResources
+export default BrowseResources;

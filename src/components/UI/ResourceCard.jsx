@@ -7,11 +7,12 @@ const ResourceCard = ({
   subject,
   name,
   author,
+  width,
   rating,
   requestLink,
 }) => {
   return (
-    <div className="relative w-87.5 rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+    <div className={`flex flex-col ${width || "min-w-87.5"} rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300`}>
       {/* Image Section */}
       <div className="relative w-full h-96 overflow-hidden">
         <img
