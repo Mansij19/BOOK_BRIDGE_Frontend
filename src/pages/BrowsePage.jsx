@@ -2,7 +2,7 @@ import React from 'react'
 import BrowseResources from '../components/section/components/BrowseResources'
 const BrowsePage = () => {
   return (
-    <div className='w-1/4 bg-gray-100 max-h-screen p-5'>
+    <div className='w-full bg-gray-100 max-h-screen p-5 flex'>
       {/* left items */}
       <div className='flex flex-col h-screen w-1/5 '>
         <div className='text-2xl font-semibold text-gray-800'> Discover Educational Resources </div>
@@ -19,7 +19,8 @@ const BrowsePage = () => {
       </div>
      
       {/* right items */}
-      <div className='w-'>
+      <div className='p-20 '>
+        <div></div>
         <BrowseResources/>
       </div>
       
