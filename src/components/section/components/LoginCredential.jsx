@@ -17,7 +17,7 @@ const LoginCredential = () => {
 
   return (
     
-    <div className="flex flex-col gap-4 w-[60%] ">
+    <div className="flex flex-col gap-4 w-full">
       {data.map((item, index) => (
         <div
           key={index}

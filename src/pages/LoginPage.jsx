@@ -7,7 +7,7 @@ const LoginPage = () => {
     <div className="flex h-screen w-full min-h-vh">
       {/* // left side */}
       <div className="h-full bg-blue-700 text-white flex flex-col justify-center items-center w-1/2 p-10 gap-5">
-        <div className="bg-blue-600 rounded-full p-5">📖 BookBridge</div>
+        <div className="bg-blue-600 rounded-full px-4 py-2">📖 BookBridge</div>
         <div className="text-5xl font-semibold text-center gap-3 flex flex-col">
           <div>Empowering learners</div>
           <div>through shared</div>
@@ -23,6 +23,7 @@ const LoginPage = () => {
           <img src={loginImage} alt="" />
         </div>
       </div>
+
       {/* // left side */}
       <div className="flex bg-gray-100 h-full w-1/2 flex-col justify-center items-center">
         {/* upper */}
@@ -42,12 +43,12 @@ const LoginPage = () => {
         </div>
 
         {/* down */}
-        <div  className="flex flex-col w-[60%] justify-center items-center">
-          <LoginCredential/>
+        <div className="flex flex-col w-[60%] justify-center items-center">
+          <LoginCredential />
         </div>
-        <div className=" w-[60%] py-3 border-2 rounded-2xl gap-2 bg-blue-500 text-white flex justify-center items-center border-gray-400">
-        Sign In 
-      </div>
+        <div className="w-[60%] py-3 border-2 rounded-2xl gap-2 bg-blue-500 text-white flex justify-center items-center border-gray-400">
+          Sign In
+        </div>
       </div>
     </div>
   );

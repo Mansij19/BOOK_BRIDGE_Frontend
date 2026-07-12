@@ -3,7 +3,7 @@ import ResourceCard from "../../UI/ResourceCard";
 import { resources } from "../../../constants/BrowserData";
 const BrowseResources = () => {
   return (
-    <div className="flex w-full">
+    <div className="flex w-full items-center">
       <div className="flex flex-wrap gap-4 w-full items-center">
         {resources.map((resource, index) => (
           <ResourceCard

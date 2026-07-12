@@ -52,7 +52,7 @@ const FeaturedResources = () => {
           "Handpicked top rated resources trending across campuses this week"
         }
       />
-      <div className="w-full flex items-center justify-around max-w-4/5 gap-10">
+      <div className="w-full flex flex-wrap items-center justify-center min-w-4/5 gap-10">
         {resources.map((resource, index) => (
           <ResourceCard
             key={index}
