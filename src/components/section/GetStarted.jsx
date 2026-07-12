@@ -2,7 +2,7 @@ import React from "react";
 import SectionHeader from "../UI/SectionHeader";
 const GetStarted = () => {
   return (
-   <div className="w-full mx-auto px-6">
+   <div className="w-full mx-auto px-5">
        <div className="flex flex-col  gap-10 py-20 items-center justify-center rounded-3xl bg-blue-700 text-white">
       <div className="font-medium  max-h-10/12 ">
         <SectionHeader

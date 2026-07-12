@@ -1,12 +1,12 @@
 import React from "react";
 import loginImage from "../assets/loginImage.jpg";
 import GoogleIcon from "@mui/icons-material/Google";
-
+import LoginCredential from "../components/section/components/LoginCredential";
 const LoginPage = () => {
   return (
     <div className="flex h-screen w-full min-h-vh">
       {/* // left side */}
-      <div className="h-full bg-blue-700 text-white flex flex-col justify-center items-center w-1/2 p-10">
+      <div className="h-full bg-blue-700 text-white flex flex-col justify-center items-center w-1/2 p-10 gap-5">
         <div className="bg-blue-600 rounded-full p-5">📖 BookBridge</div>
         <div className="text-5xl font-semibold text-center gap-3 flex flex-col">
           <div>Empowering learners</div>
@@ -19,7 +19,7 @@ const LoginPage = () => {
           designed to bridge the gap in modern education.
         </div>
 
-        <div className="">
+        <div className="rounded-2xl">
           <img src={loginImage} alt="" />
         </div>
       </div>
@@ -27,7 +27,7 @@ const LoginPage = () => {
       <div className="flex bg-gray-100 h-full w-1/2 flex-col justify-center items-center">
         {/* upper */}
         <div className="flex flex-col w-[60%] justify-center items-center">
-          <div className="w-full">
+          <div className="w-full gap-">
             <div className="w-full text-4xl font-semibold text-gray-800 ">
               Welcome back
             </div>
@@ -42,7 +42,12 @@ const LoginPage = () => {
         </div>
 
         {/* down */}
-        <div></div>
+        <div  className="flex flex-col w-[60%] justify-center items-center">
+          <LoginCredential/>
+        </div>
+        <div className=" w-[60%] py-3 border-2 rounded-2xl gap-2 bg-blue-500 text-white flex justify-center items-center border-gray-400">
+        Sign In 
+      </div>
       </div>
     </div>
   );
