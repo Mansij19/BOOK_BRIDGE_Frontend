@@ -2,8 +2,8 @@ import React from "react";
 
 const FooterList = ({ header, items }) => {
   return (
-    <div className="flex flex-col gap-3">
-      <h3 className="text-sm font-semibold uppercase text-blue-700">
+    <div className="flex flex-col gap-4">
+      <h3 className="text-lg font-semibold uppercase text-blue-700">
         {header}
       </h3>
 
