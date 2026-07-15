@@ -21,10 +21,10 @@ const Footer = () => {
   return (  
     <>
     <div className="flex flex-col gap-15 bg-gray-200 p-5  ">
-      <div className="flex justify-between w-full border border-b-emerald-700 ">
+      <div className="flex w-full">
         {/* Left Side */}
-        <div className="flex flex-row gap-15 ">
-          <div className="flex flex-col border border-amber-500 gap-4">
+        <div className="flex w-11/12 justify-between flex-row gap-15">
+          <div className="flex flex-col gap-4">
             <div className="text-3xl font-bold text-black">BookBridge</div>
             <div className=" text-gray-600">
               <div> Connecting students with the</div>
@@ -32,7 +32,7 @@ const Footer = () => {
               <div>students, for students.</div>
             </div>
           </div>
-          <div className="flex gap-10 border border-b-blue-950">
+          <div className="flex gap-10">
             {data.map((item, index) => (
               <FooterList key={index} header={item.header} items={item.items} />
             ))}

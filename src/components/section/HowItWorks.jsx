@@ -28,7 +28,7 @@ const HowItWorks = () => {
     ];
 
   return (
-    <div className="pb-16 w-full flex flex-col gap-10 items-center justify-center">
+    <div className="p-5 w-full flex flex-col gap-10 items-center justify-center">
       <SectionHeader title={"How It Works"} description={"Three simple steps to join and start learning"} />
 
       <div className="flex justify-between items-center w-full max-w-4/5 px-5">
