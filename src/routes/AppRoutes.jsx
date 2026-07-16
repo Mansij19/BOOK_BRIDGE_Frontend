@@ -11,12 +11,12 @@ import NotificationsPage from "../pages/NotificationPage";
 import CartPage from "../pages/CartPage";
 import DashboardLayout from "../components/Layout/DashboardLayout";
 import Login from "../pages/LoginPage";
+import AuthLayout from "../components/Layout/AuthLayout";
 // import AuthLayout from "../layouts/AuthLayout";
 
 const AppRoutes = () => {
   return (
     <Routes>
-
       {/* Main Website */}
       <Route element={<MainLayout />}>
         <Route path="/" element={<LandingPage />} />
@@ -26,14 +26,20 @@ const AppRoutes = () => {
       </Route>
 
       {/* User Pages */}
-      <Route element={<DashboardLayout />}>
-        <Route path="/profile" element= {<ProfilePage />} />
-        <Route path="/uploads" element= {<UploadPage />} />
-        <Route path="/notifications" element= {<NotificationsPage />} />
-        <Route path="/cart" element= {<CartPage />} />
+      <Route
+        element={
+          <AuthLayout>
+            <DashboardLayout />
+          </AuthLayout>
+        }
+      >
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/uploads" element={<UploadPage />} />
+        <Route path="/notifications" element={<NotificationsPage />} />
+        <Route path="/cart" element={<CartPage />} />
       </Route>
-      
-       <Route path="/login" element={<Login />} />
+
+      <Route path="/login" element={<Login />} />
       {/* Authentication */}
       {/* <Route element={<AuthLayout />}>
         <Route path="/login" element={<Login />} />
@@ -42,7 +48,6 @@ const AppRoutes = () => {
 
       {/* 404 */}
       {/* <Route path="*" element={<NotFound />} /> */}
-
     </Routes>
   );
 };
