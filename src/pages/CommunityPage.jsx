@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from '../components/UI/Sidebar'
+import CommunityCard from '../components/section/CommunityCard'
 
 const CommunityPage = () => {
   const sort = [
@@ -51,6 +52,9 @@ const CommunityPage = () => {
           </select>
             </div>
           </div>
+          </div>
+          <div>
+            <CommunityCard/>
           </div>
           
         </div>

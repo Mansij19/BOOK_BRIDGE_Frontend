@@ -1,7 +1,7 @@
 import React from "react";
 import loginImage from "../assets/loginImage.jpg";
 import GoogleIcon from "@mui/icons-material/Google";
-import LoginCredential from "../components/section/components/LoginCredential";
+// import LoginCredential from "../components/section/components/LoginCredential";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import Divider from "../components/UI/Divider";
